@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="script.js"></script>
+    <title>Kalkulačka</title>
+</head>
+<body>
+    <header>
+        <div id="pagetitle"><h1>Kalkulačka</h1></div>
+    </header>
+
+    </nav>
+    <main>
+        <div id="infocolumn">
+            <div id="history"></div><br>
+            <input type="button" value="Vymazat" onclick="histClear()">
+        </div>
+        <div id="maincontent">
+            <div>
+                <label for="num1">Zadej 1 číslo:</label><br>
+                <input type="text" name="num1" id="num1">
+            </div>
+            <div>
+                <label for="num2">Zadej 2 číslo:</label><br>
+                <input type="text" name="num2" id="num2">
+            </div>
+            <div>
+                <br>
+                <input type="button" value="+" style="font-family:monospace;" onclick="calAdd()">
+                <input type="button" value="-" style="font-family:monospace;" onclick="calDeduct()">
+                <input type="button" value="*" style="font-family:monospace;" onclick="calMultiply()">
+                <input type="button" value="/" style="font-family:monospace;" onclick="calDivide()">
+                <input type="button" value="%" style="font-family:monospace;" onclick="calRestDivide()">
+                <br><br>
+                <div id="caloutput">N/A</div><br>
+                <input type="button" value="radius" onclick="calRadius()">
+                <input type="button" value="max" onclick="calMax3()">
+            </div>
+        </div>
+    </main>
+    </footer>
+</body>
+</html>

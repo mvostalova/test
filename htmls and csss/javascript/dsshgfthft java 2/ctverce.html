@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas s čtverci</title>
+  <style>
+    canvas {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+
+  <script>
+    // Získání odkazu na element canvas a jeho kontext
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+
+    // Vykreslení prvního čtverce
+    ctx.fillStyle = '#FF0000'; // Červená barva
+    ctx.fillRect(50, 50, 100, 100); // Počáteční pozice (50, 50), šířka 100, výška 100
+
+    // Vykreslení druhého čtverce
+    ctx.fillStyle = '#0000FF'; // Modrá barva
+    ctx.fillRect(80, 80, 150, 150); // Počáteční pozice (80, 80), šířka 150, výška 150
+  </script>
+</body>
+</html>
